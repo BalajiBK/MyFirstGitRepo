@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="FirstTestScript">
+    <classes>
+      <class name="UnderAllAnnotations"/>
+    </classes>
+  </test> <!-- FirstTestScript -->
+  <test name="YahooFirstTest">
+    <classes>
+      <class name="Test.Yahootest"/>
+    </classes>
+  </test> <!-- YahooFirstTest -->
+  <test name="registerInYahoo">
+    <classes>
+      <class name="Test.Yahooregistrationtest"/>
+    </classes>
+  </test> <!-- registerInYahoo -->
+  <test name="LoginToApplication">
+    <classes>
+      <class name="Test.TestingPriorityDependency"/>
+    </classes>
+  </test> <!-- LoginToApplication -->
+  <test name="AddPatient">
+    <classes>
+      <class name="Test.TestingPriorityDependency"/>
+    </classes>
+  </test> <!-- AddPatient -->
+  <test name="Logout">
+    <classes>
+      <class name="Test.TestingPriorityDependency"/>
+    </classes>
+  </test> <!-- Logout -->
+  <test name="FirstTestScript(failed)">
+    <classes>
+      <class name="UnderAllAnnotations">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="FirstTestScript"/>
+          <include name="beforeSuite"/>
+          <include name="SecondTestScript"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- UnderAllAnnotations -->
+      <class name="Test.Yahootest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Test.Yahootest -->
+      <class name="Test.TestingPriorityDependency">
+        <methods>
+          <include name="TestInitiation"/>
+          <include name="TestInitiation"/>
+          <include name="TestInitiation"/>
+        </methods>
+      </class> <!-- Test.TestingPriorityDependency -->
+    </classes>
+  </test> <!-- FirstTestScript(failed) -->
+  <test name="LoginToApplication(failed)">
+    <classes>
+      <class name="UnderAllAnnotations">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- UnderAllAnnotations -->
+      <class name="Test.TestingPriorityDependency">
+        <methods>
+          <include name="Logout"/>
+          <include name="LoginToApplication"/>
+          <include name="AddPatient"/>
+          <include name="TestInitiation"/>
+          <include name="TestInitiation"/>
+          <include name="TestInitiation"/>
+        </methods>
+      </class> <!-- Test.TestingPriorityDependency -->
+      <class name="Test.Yahootest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Test.Yahootest -->
+    </classes>
+  </test> <!-- LoginToApplication(failed) -->
+  <test name="AddPatient(failed)">
+    <classes>
+      <class name="UnderAllAnnotations">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- UnderAllAnnotations -->
+      <class name="Test.TestingPriorityDependency">
+        <methods>
+          <include name="Logout"/>
+          <include name="LoginToApplication"/>
+          <include name="AddPatient"/>
+          <include name="TestInitiation"/>
+          <include name="TestInitiation"/>
+          <include name="TestInitiation"/>
+        </methods>
+      </class> <!-- Test.TestingPriorityDependency -->
+      <class name="Test.Yahootest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Test.Yahootest -->
+    </classes>
+  </test> <!-- AddPatient(failed) -->
+  <test name="Logout(failed)">
+    <classes>
+      <class name="UnderAllAnnotations">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- UnderAllAnnotations -->
+      <class name="Test.TestingPriorityDependency">
+        <methods>
+          <include name="Logout"/>
+          <include name="LoginToApplication"/>
+          <include name="AddPatient"/>
+          <include name="TestInitiation"/>
+          <include name="TestInitiation"/>
+          <include name="TestInitiation"/>
+        </methods>
+      </class> <!-- Test.TestingPriorityDependency -->
+      <class name="Test.Yahootest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Test.Yahootest -->
+    </classes>
+  </test> <!-- Logout(failed) -->
+</suite> <!-- Failed suite [Suite] -->

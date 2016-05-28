@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests">
+
+    <test name="FirstTestScript">  
+	<classes>
+	    <class name="UnderAllAnnotations" />
+	</classes>
+    </test>
+    
+    <test name="YahooFirstTest">  
+	<classes>
+	    <class name="Test.Yahootest" />
+	</classes>
+    </test>
+    
+    <test name="registerInYahoo">  
+	<classes>
+	    <class name="Test.Yahooregistrationtest" />
+	</classes>
+    </test>
+ 
+   
+   
+</suite>
